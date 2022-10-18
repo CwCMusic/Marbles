@@ -4115,7 +4115,7 @@ var Field = Class.create(Grid, {
 
       var brick = this.bricks[i];
 
-      track.bricks[brick.cell.row * this.cols + brick.cell.col] = {
+      track.bricks[brick.cell.row * 100 + brick.cell.col] = {
         type: brick.type,
         rotation: getRotationAsNumber(brick.rotation),
         row: brick.cell.row,
